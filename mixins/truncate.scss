@@ -1,12 +1,9 @@
-# commonly-used-scss-mixins
-
-Commonly used scss mixins.
-
-## Usage
-
-### text truncating
-
-```scss
+/* 
+ * mixin for truncating text, can be used for multiple lines text truncating
+ * @param font-size      default 14px
+ * @param line-height    default 1.4
+ * @param lines-to-show  default 1
+ */
 @mixin truncate-text($font-size: 14px, $line-height: 1.4, $lines-to-show: 1) {
   font-size: $font-size;
   line-height: $line-height;
@@ -19,13 +16,3 @@ Commonly used scss mixins.
   overflow: hidden;
   text-overflow: ellipsis;
 }
-
-// usage
-.text-truncate {
-  @include truncate-text(12px, 1.4, 2);
-}
-```
-
-## License
-
-MIT
